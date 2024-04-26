@@ -15,7 +15,7 @@ const Projects = () => {
       
       {/* Project 2 */}
       <div className="project-card">
-        <div className="project-image" style={{ backgroundImage: 'url(public/Images/hanzel4.jpg)' }}></div>
+        <div className="project-image" style={{ backgroundImage: 'url(src/public/Images/hanzel4.jpg)' }}></div>
         <div className="project-info">
           <h3>Project 2</h3>
           <p>Hanzel</p>
@@ -25,7 +25,7 @@ const Projects = () => {
 
       {/* Project 3 */}
       <div className="project-card">
-        <div className="project-image" style={{ backgroundImage: 'url(public/Images/Taptempoi.png)' }}></div>
+        <div className="project-image" style={{ backgroundImage: 'url(src/public/Images/Taptempoi.png)' }}></div>
         <div className="project-info">
           <h3>Project 3</h3>
           <p>Tap Tempo App</p>
