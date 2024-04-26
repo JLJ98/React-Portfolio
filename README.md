@@ -73,3 +73,4 @@ For more inquiries, or if you encounter issues in using the project, you can rea
 Ask BCS, tutors, and Chat GPT were used in the process of creating this application.
 
 ## Links
+Deployed App: https://react-portfolio-2-ww9n.onrender.com
