@@ -1,0 +1,60 @@
+/* resume-container styles */
+.resume-container {
+    margin: 0 auto; /* Centers the resume container horizontally */
+    width: 80%; /* Sets the width of the resume container to 80% */
+    font-family: sans-serif; /* Sets the font family to sans-serif */
+    text-align: center; /* Centers the text within the resume container */
+    color: #646cff; /* Sets the text color to a purple-blue for all text within the resume container */
+}
+
+/* h1 styles */
+h1 {
+    text-align: center; /* Centers the text of the h1 element */
+    font-size: 2em; /* Sets the font size of the h1 element to 2em */
+    margin-bottom: 1em; /* Adds some margin below the h1 element */
+    color: #646cff; /* Sets the color specifically for h1 to ensure consistency */
+}
+
+/* skills-section styles */
+.skills-section {
+    margin-top: 2em; /* Adds some margin above the skills section */
+}
+
+/* skills-section h2 styles */
+.skills-section h2 {
+    text-align: center; /* Centers the text of the h2 element within the skills section */
+    font-size: 1.5em; /* Sets the font size of the h2 element to 1.5em */
+    margin-bottom: 1em; /* Adds some margin below the h2 element */
+    color: #646cff; /* Purple-blue color for h2 */
+}
+
+/* skills-container styles */
+.skills-container {
+    display: flex; /* Makes the skills container a flexbox */
+    justify-content: space-between; /* Justifies the content of the flexbox to be spaced between the two skill categories */
+}
+
+/* skill-category styles */
+.skill-category {
+    width: 45%; /* Sets the width of each skill category to 45% */
+}
+
+/* skill-category h3 styles */
+.skill-category h3 {
+    font-size: 1.2em; /* Sets the font size of the h3 element within the skill category to 1.2em */
+    margin-bottom: 0.5em; /* Adds some margin below the h3 element */
+    color: #646cff; /* Purple-blue color for h3 */
+}
+
+/* skill-category ul styles */
+.skill-category ul {
+    list-style: none; /* Removes the default bullet points from the list */
+    padding: 0; /* Sets the padding to 0 */
+    margin: 0; /* Sets the margin to 0 */
+}
+
+/* skill-category li styles */
+.skill-category li {
+    margin-bottom: 0.3em; /* Adds some margin below each list item */
+    color: #646cff; /* Purple-blue color for list items */
+}

@@ -1,56 +1,70 @@
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Set to three columns explicitly */
+  gap: 40px; /* Maintain a 40px gap for aesthetics */
+  padding: 40px; /* Padding around the entire grid */
+  align-items: stretch; /* Align items in case of different content heights */
+}
+
+.project-card {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: auto; /* Adapts height based on content */
+}
+
+.project-image {
+  background-size: cover;
+  background-position: center;
+  height: 250px; /* Adjust height as necessary */
+}
+
+.project-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-info h3 {
+  margin: 15px 0 10px;
+  font-size: 1.8em;
+}
+
+.project-info p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.project-info a {
+  text-decoration: none;
+  color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 1em;
+}
+
+.project-info a:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+
+/* Responsive adjustments for tablets and smaller devices */
+@media (max-width: 1024px) {
+  .projects-grid {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
   }
-  
-  .project-card {
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+  .projects-grid {
+      grid-template-columns: 1fr; /* One column for mobile */
+      gap: 20px;
+      padding: 20px;
   }
-  
-  .project-image {
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-  }
-  
-  .project-info {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  .project-info h3 {
-    margin: 10px 0 5px;
-    font-size: 1.5em;
-  }
-  
-  .project-info p {
-    font-size: 1em;
-    color: #666;
-  }
-  
   .project-info a {
-    text-decoration: none;
-    color: #007bff;
-    padding: 8px 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+      padding: 8px 16px;
   }
-  
-  .project-info a:hover {
-    background-color: #0056b3;
-    color: #ffffff;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .projects-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  
+}
